@@ -1,0 +1,51 @@
+header {
+    background: #3f51b5;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto 15px;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.router-link-active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.header-info div {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .header-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

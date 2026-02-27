@@ -1,0 +1,15 @@
+<div class="about-page">
+    <h1>Меню</h1>
+
+    <div class="menu-container">
+        @for (item of menuItems; track item.id) {
+        <div class="menu-item">
+            <label>
+                <input type="checkbox" [checked]="item.checked" (change)="onCheckboxChange(item)" />
+                {{ item.name }} — {{ item.value }}
+            </label>
+        </div>
+        }
+    </div>
+
+</div>
